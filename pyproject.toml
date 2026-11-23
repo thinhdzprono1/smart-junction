@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartjunction"
+version = "0.1.0"
+description = "SmartJunction v1 vehicle counting pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+smartjunction = "smartjunction.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
